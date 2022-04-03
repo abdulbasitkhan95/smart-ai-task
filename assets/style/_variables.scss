@@ -1,0 +1,165 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+/* -------Start Of Website Color Branding-------- */
+
+$primary: #8fc9e8;
+$secondary: #292f33;
+$orange: #FC6504;
+$Gery: #2A2D31;
+$lightGery: #707378;
+$BorderGery: #BCBCBC;
+$LightBorderGery: #F0F1F1;
+$blue: #00106D;
+$white: #ffffff;
+$black: #292F33;
+$paragraph-color: #2A2D31;
+$input-color: #919191;
+$number-color: #A9ABAD;
+$quote-bg-color: #F8F8F8;
+$table-bg-color: #F0EFF2;
+
+/* -------End Of Website Color Branding-------- */
+
+/* -------begin customization-------- */
+$body-bg: $white;
+$body-color: $secondary;
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+                (
+                        "primary": $primary,
+                        "secondary": $secondary,
+                        "lightGery": $lightGery,
+                        "white": $white,
+                        "black": $black,
+                        "blue":$blue,
+                        "orange":$orange
+
+                ),
+                $theme-colors
+);
+
+$font-family-base: $font-family-Oswald;
+$headings-font-family: $font-family-Oswald;
+$headings-color: $secondary;
+
+$slick-font-path: "/assets/fonts/";
+$slick-loader-path: "/assets/images/";
+
+
+$h1-font-size: rem(48);
+$h2-font-size: rem(32);
+$h3-font-size: rem(26);
+$h4-font-size: rem(24);
+$h5-font-size: rem(20);
+$h6-font-size: rem(18);
+$lead-font-size: rem(26);
+$headings-margin-bottom: 0px;
+
+$btn-border-radius: 50px;
+$input-border-radius: 10px;
+$input-border-color: #707070;
+$input-font-size: rem(24);
+$input-border-width: 1px;
+$input-padding-y: 0;
+$input-padding-x: 0;
+$input-height: rem(60);
+$form-group-margin-bottom: rem(67);
+
+$input-placeholder-color:  rgba(#0D0D0D, .8);
+$input-plaintext-color:  rgba($white, 0.7);
+$link-hover-color: $secondary;
+
+
+$btn-padding-y: 0px;
+$btn-padding-x: 0px;
+$btn-border-width: 2px;
+
+
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+$custom-checkbox-indicator-icon-checked: none;
+$custom-checkbox-indicator-icon-indeterminate: none;
+$custom-radio-indicator-icon-checked: none;
+$carousel-control-next-icon-bg: none;
+$carousel-control-prev-icon-bg: none;
+$form-feedback-icon-valid: none;
+$custom-select-indicator: none;
+$form-feedback-icon-invalid: none;
+
+
+$card-bg: transparent;
+$card-border-color: #dddddd;
+
+
+$breadcrumb-padding-y:      0;
+$breadcrumb-padding-x:      0;
+$breadcrumb-bg:             transparent;
+$breadcrumb-font-size:      rem(18);
+$breadcrumb-margin-bottom:  0;
+$breadcrumb-active-color:   $primary;
+$breadcrumb-border-radius:  0;
+$breadcrumb-item-padding:   rem(30);
+$breadcrumb-divider-color:  $lightGery;
+$breadcrumb-divider: "";
+
+
+
+
+$modal-backdrop-bg: $black;
+$modal-content-bg: $black;
+$modal-content-border-width: 0px;
+$modal-content-border-color: transparent;
+$modal-content-border-radius: 0px;
+$modal-content-box-shadow-xs: none;
+$modal-backdrop-opacity: 0.8;
+
+
+::-moz-selection {
+  background: rgba($primary, 0.23);
+}
+
+::selection {
+  background: rgba($primary, 0.23);
+}
+
+.font-family-Roboto {
+  font-family: $font-family-Roboto;
+}
+
+//$color-red-error: $danger !default;
+//$color-green-success: $success;
+//$color-grey-arrow: $grey !default;
+
+$zindex-select-dropdown: 1060 !default; // must be higher than a modal background (1050)
+
+//** Placeholder text color
+$input-color-placeholder: $input-placeholder-color !default;
+$input-alt-color-placeholder: rgba($input-color-placeholder, 0.5) !default;
+
+/* -------end customization-------- */
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 767px) {
+}
