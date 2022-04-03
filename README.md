@@ -3,7 +3,7 @@
 It was a small task for Smart AI Camera
 
 # Live Link
-This task is uploaded on Netlify (https://eloquent-custard-01457b.netlify.app/?)
+This task is uploaded on Netlify (https://eloquent-custard-01457b.netlify.app/)
 
 ### Available Scripts
 
